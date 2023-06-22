@@ -1,1 +1,48 @@
-
+{
+  "id": "did:web:verifyid.quaddev.xyz",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:verifyid.quaddev.xyz"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://verifyid.quaddev.xyz/"
+        ]
+      }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/1888a53a-ad88-49f1-8236-1d31e1cc3701"
+        ]
+      }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#732b25c4aac04b3f8654bd50c4a08c5bvcSigningKey-5f299",
+      "controller": "did:web:verifyid.quaddev.xyz",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "publicKeyJwk": {
+        "crv": "secp256k1",
+        "kty": "EC",
+        "x": "s_JBPW6yYgISbHYOQGm1_CjocNTX9eWiHtgbFjwMq8w",
+        "y": "DFyT8t90HXlgSJmVuzLoaNp_EjAyW01N3T6l6yhSNpg"
+      }
+    }
+  ],
+  "authentication": [
+    "#732b25c4aac04b3f8654bd50c4a08c5bvcSigningKey-5f299"
+  ],
+  "assertionMethod": [
+    "#732b25c4aac04b3f8654bd50c4a08c5bvcSigningKey-5f299"
+  ]
+}
