@@ -1,9 +1,9 @@
 {
-  "id": "did:web:verifyid.quaddev.xyz",
+  "id": "did:web:agreeable-river-001e72a10.3.azurestaticapps.net",
   "@context": [
     "https://www.w3.org/ns/did/v1",
     {
-      "@base": "did:web:verifyid.quaddev.xyz"
+      "@base": "did:web:agreeable-river-001e72a10.3.azurestaticapps.net"
     }
   ],
   "service": [
@@ -12,7 +12,7 @@
       "type": "LinkedDomains",
       "serviceEndpoint": {
         "origins": [
-          "https://verifyid.quaddev.xyz/"
+          "https://agreeable-river-001e72a10.3.azurestaticapps.net/"
         ]
       }
     },
@@ -28,21 +28,21 @@
   ],
   "verificationMethod": [
     {
-      "id": "#732b25c4aac04b3f8654bd50c4a08c5bvcSigningKey-5f299",
-      "controller": "did:web:verifyid.quaddev.xyz",
+      "id": "#37f960a0d8094f39b63b48e4901670bevcSigningKey-dc7ec",
+      "controller": "did:web:agreeable-river-001e72a10.3.azurestaticapps.net",
       "type": "EcdsaSecp256k1VerificationKey2019",
       "publicKeyJwk": {
         "crv": "secp256k1",
         "kty": "EC",
-        "x": "s_JBPW6yYgISbHYOQGm1_CjocNTX9eWiHtgbFjwMq8w",
-        "y": "DFyT8t90HXlgSJmVuzLoaNp_EjAyW01N3T6l6yhSNpg"
+        "x": "nWyB8PO6C_8NlUjmsKxjmV_Gc2XXLHoOEGh2QpsI8ZM",
+        "y": "GYrHlYlwZL8zvID9j3CniisNNYRidSGRpMNcUkPB7xI"
       }
     }
   ],
   "authentication": [
-    "#732b25c4aac04b3f8654bd50c4a08c5bvcSigningKey-5f299"
+    "#37f960a0d8094f39b63b48e4901670bevcSigningKey-dc7ec"
   ],
   "assertionMethod": [
-    "#732b25c4aac04b3f8654bd50c4a08c5bvcSigningKey-5f299"
+    "#37f960a0d8094f39b63b48e4901670bevcSigningKey-dc7ec"
   ]
 }
